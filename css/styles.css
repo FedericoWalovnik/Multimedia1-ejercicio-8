@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor {
+  display: flex;
+}
+
+.columnafondo {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+
+.bloque1 {
+  background-color: #00a398;
+  flex: 0 0 60vh;
+}
+
+.bloque2 {
+  background-color: rgb(255, 255, 255);
+  flex: 0 0 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bloque2__texto {
+  color: rgb(116, 116, 116);
+  width: 20vw;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.imagen {
+  background-image: url(../imagenes/10.jpg);
+  width: 70vw;
+  background-repeat: no-repeat;
+  background-position: 80% 80%;
+  background-size: cover;
+}
