@@ -5,43 +5,95 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  background-color: #1b1b1b;
+  font-family: 'Roboto Mono', monospace;
+  color: #fff;
+  overflow: hidden;
 }
 
-.contenedor {
-  display: flex;
+.line {
+  position: absolute;
+  top: 10%;
+  background-color: #fff;
+  height: 0.5px;
+  width: 100vw;
+  z-index: 1;
 }
 
-.columnafondo {
-  display: flex;
-  flex-direction: column;
-  width: 30vw;
+.line-2 {
+  top: 8%;
 }
 
-.bloque1 {
-  background-color: #00a398;
-  flex: 0 0 60vh;
-}
-
-.bloque2 {
-  background-color: rgb(255, 255, 255);
-  flex: 0 0 40vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.bloque2__texto {
-  color: rgb(116, 116, 116);
-  width: 20vw;
-  font-size: 12px;
-  line-height: 17px;
-}
-
-.imagen {
-  background-image: url(../imagenes/10.jpg);
-  width: 70vw;
+.header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../imagenes/yo.png);
+  background-position: right;
   background-repeat: no-repeat;
-  background-position: 80% 80%;
-  background-size: cover;
+  background-size: 60vw;
+  margin-bottom: 20rem;
+
+  position: relative;
+}
+
+.header__textbox {
+  position: absolute;
+  top: 12%;
+  left: 8%;
+}
+
+.title {
+  display: block;
+  font-family: 'Staatliches', 'Roboto Mono', monospace;
+  font-size: 8.5rem;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.title--animated {
+  animation: moveInRight 0.8s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.title--animated--delay {
+  animation: moveInRight 0.8s ease-out 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.paragraph {
+  width: 50vw;
+  font-size: 1.2rem;
+  word-spacing: 6px;
+  line-height: 2.2rem;
+  margin-bottom: 6%;
+}
+
+.icons {
+  display: flex;
+  width: 45vw;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 13%;
+  left: 8%;
+  font-size: 2rem;
+}
+
+.icons i {
+}
+
+.u-margin-top-header {
+  margin-top: -3rem;
 }
