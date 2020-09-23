@@ -15,7 +15,7 @@
 }
 
 .imagenprincipal {
-  background-image: url(/imagenes/principal.jpg);
+  background-image: url(./imagenes/principal.jpg);
   height: 100vh;
   flex: 0 0 50vw;
   background-size: cover;
@@ -23,7 +23,7 @@
 }
 
 .imagensecundaria {
-  background-image: url(/imagenes/secundaria.jpg);
+  background-image: url(./imagenes/secundaria.jpg);
   height: 100vh;
   flex: 0 0 20vw;
   background-size: cover;
